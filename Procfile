@@ -1,1 +1,1 @@
-web:  gunicorn XtraApps.wsgi --log-file-
+web:  gunicorn XtraApps.wsgi 
