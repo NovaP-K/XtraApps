@@ -1,0 +1,69 @@
+{% if realnews %}
+<div class="w-100 p-0 m-0 h-100 d-block" id="news-info-large"
+    style="position: fixed;background: rgba(0,0,0,0.55);z-index: 3;">
+    {% else %}
+    <div class="w-100 p-0 m-0 h-100 d-none" id="news-info-large"
+        style="position: fixed;background: rgba(0,0,0,0.55);z-index: 3;">
+        {% endif %}
+        <div class="container-fluid h-100" style="padding: 20px;">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-10" style="padding: 0px;max-width: 1000px;">
+                    <div class="card" id="clickkk">
+                        <div class="card-body" style="padding: 0px;">
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="text-dark font-weight-bold" id="news-info-large-title"
+                                        style="margin-top: 10px;font-size: 35px;font-family: Abel, sans-serif;padding-top: 10px;margin-right: 20px;margin-left: 20px;">
+                                        <br /></h3>
+                                    <h6 class="text-muted mb-2" id="news-info-large-subtitle"
+                                        style="margin-left: 10px;padding-right: 10px;padding-left: 10px;"><br /></h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12 text-center align-self-center">
+                                    <div id="news-info-large-image"
+                                        style="min-width: 100%;min-height: 400px;background: url('') center / contain no-repeat;">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12"
+                                    style="margin-top: 10px;margin-left: 10px;margin-right: 10px;">
+                                    <p id="news-info-large-description" style="font-size: 23px;color: var(--dark);margin-right: 20px;margin-left: 20px;">
+                                        <br />
+                                        <div class="progress ml-5 mr-5" id="descriptionProgressBarContainer">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated " id = "descriptionProgressBar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%">Loading Full News</div>
+                                         </div></p>
+                                        
+                                    <div class="row">
+                                     <!--
+                                        <div
+                                            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center align-items-xl-end">
+                                            <button id="LoadMore"
+                                                class="btn btn-primary d-xl-flex justify-content-center align-items-xl-center"
+                                                type="button" style="width: 50%;border-radius: 100px;">Load Full
+                                                Article</button>
+                                        </div>
+                                        --> 
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center"
+                                            style="margin-top: 10px;">
+                                            <button
+                                                class="btn btn-primary d-xl-flex justify-content-xl-center align-items-xl-end"
+                                                type="button"
+                                                id="ToTheOriginalArticle"                                          
+                                                style="width: 50%;border-radius: 100px;background: var(--danger);">Visit
+                                                Original Article </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="text-right" style="padding: 5px;font-size: 15px;">Published By <a
+                                            href="#" id="news-publisher-name"></a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
