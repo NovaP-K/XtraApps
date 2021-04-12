@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    {% block title %}
+    {% endblock title %}
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'Xtranews/css/offline-theme-slide.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Xtranews/css/offline-language-english.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'Xtranews/css/news-info-style.css' %}">
+    <link rel="stylesheet" href=" {% static 'Xtranews/css/bootstrap.min.css' %} ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="{% static 'Xtranews/fonts/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Xtranews/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Xtranews/fonts/typicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Xtranews/fonts/fontawesome5-overrides.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Xtranews/css/sidebar.css' %}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script src="{% static 'Xtranews/js/bootstrap.min.js' %}"></script>
+
+
+    <style>
+    
+    </style>
+
+</head>
+
+<body id="page-top">
+
+
+
+
+{% include 'static_template/newsinfo.html' %}
+
+    <div id="wrapper">
+    
+       
+                {% include 'static_template/sidebar.html' %} 
+
+                {% include 'static_template/navbar.html' %} 
+
+                <div class="container-fluid" style="margin-top: 5px;margin-bottom: 5px;">
+                     {% block news-info %}{% endblock news-info %}
+                </div>
+            </div>
+
+
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2021</span></div>
+                </div>
+            </footer>
+
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
+
+
+    </div>
+
+   
+     <script src="{% static 'Xtranews/js/mrEncoder.js' %}"></script>
+
+    <script src="{% static 'Xtranews/js/newsload.js' %}"></script>
+
+    <script src="{% static 'Xtranews/js/theme.js' %}"></script>
+
+    <script src="{% static 'Xtranews/js/iwantmorenews.js' %}"></script>
+    
+    <script src="{% static 'Xtranews/js/getsomedetail.js' %}"></script>
+
+    {% if realnews %}
+        <script>getNewsInformation("{{realnews}}")</script>
+    {% endif %}
+
+</body>
+
+</html>

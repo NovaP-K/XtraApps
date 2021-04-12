@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "xtranews",
+  "private_key_id": "47831fd3d83dc9e9ee5941fb59854b0685bedd32",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDdACnyDoPVB+aC\nrv5F6BAHE0/zoPNZJnnKDYghWdsYpfdXNTnaK5qqR8bTas9DP8vbEn7pBTjW4B6g\nbkDaVo/tDCeaK2UkZARtHPBtj5RwVMJBKt32xgXH31XS0SN23kfTfjt2bUjdado+\nfoqsy7NeeoCUDefZS8edfd81wYbi7HfVO9343MmGNf3g74mqPGXocrko9luB2qt1\n/ULmDHKALPd8G6GjTZMLXeCkbka4W07SkBjJ3BKFr52vbxbknySCsWSD5UeKFVab\n+mqdWsfS/1Pk+ChkORhtgO4fsXx56hmndszuNP/8CgUz41J1T4+SyDBUa/aCwN/n\ngf7kTeM1AgMBAAECggEAFQT7OFXHlacs9jCBKDJ4dcfRMqWUB55odn5/fFaQx2Ef\nq4h5MmYzzW7Kuxh9UpLah4FUl0KjI5LI7u7Vlb6mbUAa8yed9M5bempGdtExZ9az\n7CFQ37P5YEd+YPD5y8g78iJfMvYVeFOlSYzdES7Fpl6F5K8G5my19WV/qZv4wZPZ\nV3s1nVKdzoiamcuPJjHiQzdIezJcEpOf8vQ2hb5jfwZFOQe5TjtAYAIF+dietHyH\nRfDQnb2oii4e9+2AqALYMQ8CpjBZgo6pjUaOLgXG5HK41gq6RGE4co/IW2+jdJei\nPqSr4CCoIXIfCxSqJaOrrLjkAAQ8F+7WWLstNmIt4QKBgQDyx9+D3Rr/T4a+yJiQ\naeXIrH08z+dQXGfPun+K9pxZKQzdgGlsIcm0zN0rztxqF7zxYOPOF6C23RwwKPx1\n2m8Mp+lx4sdvP93spCbL2Fgxu1SqQUtzUwFNEDptpH5+43lDDWaj29eTlusn0bDd\n0eZNS4S2+b7Frwi3nAIgREvi4QKBgQDpCLJ7dLxvaWuG0/4ZrQyotY4lNVL2XhDf\n1g6IU5yG5fdmszMK02Asg1ciRVPn0IxN1rOmuMAwCdf/nALAMN2V2e5J1V42y8PR\nWA9Gu5DWAj5xDfN6lt7nw1M3Zfn1f2WU3jjr9RyISaJkYgOV11yttjjRR10r5Eih\nYx/Emsve1QKBgQCybSya99PQkXzhGAHwGLP04LgGCnHhAJiW9WSpF4dei6nV3Hse\nKlLYmrttZ9Fb82g8Kc4ieAD4g9Ykmuq4HroAniMWPOn/m/uY4CdXJv/iRN/7ZJN0\nBSvunB+k1wDUdo93NREbGgX8hSz8DcMjsxDD+91ksHWBSZtpfbGeTzNKYQKBgQDL\ngcXk3LhnD4hQ0beZkq94cj01r1DJSLKx140Pbv1GLXSWIq7TqG7X0Md6bVLuIgk1\nPOfdFID6Ms6IMiWQ09vfLtfTcNt7PQ3AN4f3vHuq+YCwWH+mMjVt7v0wZwUYaO48\nSKkrHv6Q4sVHpvT8mXwdVAJgeVMbrpvjHN60Yn7iFQKBgDUBSTHL/h1Oit2TbQNc\nI5Yj02vk1xqr38IqogdYntsV/aNaYJezMsYqyxMLKQia4tnjoS+UomRILoKzaDng\nO79FtT09gTGHtcQXsPa6j5fizqNP7KEv94yDbHA2lv3vazHGcjwpDuH3vSysNrJl\nW90mk5S/rZLy93H0mDXlpZ08\n-----END PRIVATE KEY-----\n",
+  "client_email": "novatech@xtranews.iam.gserviceaccount.com",
+  "client_id": "115597575374627702064",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/novatech%40xtranews.iam.gserviceaccount.com"
+}

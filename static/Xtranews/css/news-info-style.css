@@ -1,0 +1,6 @@
+#news-info-large {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#news-info-large::-webkit-scrollbar { width: 0 !important}
