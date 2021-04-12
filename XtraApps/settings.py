@@ -11,6 +11,11 @@ from pathlib import Path
 import os
 
 import django_heroku
+import dj_database_url
+import psycopg2
+
+DATABASE_URL = os.environ['DATABASE_URL']
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,10 +34,15 @@ STATIC_DIR_XTRANEWS = os.path.join(BASE_DIR, 'Xtranews')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'na&94o-uhofsbt5u*71-(ngyqyi=r+7l4r+c&jn1(gsp55glu1'
 
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','xtranews.herokuapp.com','xtranews.me']
+
+
 
 
 # Application definition
@@ -84,12 +94,18 @@ WSGI_APPLICATION = 'XtraApps.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
+#DATABASES = {
+#   'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'mydatabase',
+#        'USER': 'mydatabaseuser',
+#        'PASSWORD': 'mypassword',
+#        'HOST': '127.0.0.1',
+#        'PORT': '5432',
+#    }
+#}
 
 
 # Password validation
