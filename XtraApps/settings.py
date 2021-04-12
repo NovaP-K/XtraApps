@@ -94,7 +94,7 @@ WSGI_APPLICATION = 'XtraApps.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+DATABASES = { 'default': dj_database_url.config() }
 
 #DATABASES = {
 #   'default': {
