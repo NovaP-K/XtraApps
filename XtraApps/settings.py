@@ -16,6 +16,7 @@ import django_heroku
 BASE_DIR = Path(__file__).resolve().parent.parent
 # print(BASE_DIR)
 TEMPLATE_DIR = os.path.join(BASE_DIR , 'templates')
+
 # print(TEMPLATE_DIR)
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 # print(STATIC_DIR)
@@ -64,6 +65,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             TEMPLATE_DIR,
+            [os.path.join(BASE_DIR, 'templates')],
         ],
         'APP_DIRS': True,
         'OPTIONS': {
