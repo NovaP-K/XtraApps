@@ -29,7 +29,7 @@ STATIC_DIR_XTRANEWS = os.path.join(BASE_DIR, 'Xtranews')
 SECRET_KEY = 'na&94o-uhofsbt5u*71-(ngyqyi=r+7l4r+c&jn1(gsp55glu1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','xtranews.herokuapp.com','xtranews.me']
 

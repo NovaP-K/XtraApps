@@ -11,7 +11,7 @@ import json
 from .mrEncoder import decodeIt  
 
 def gethomenews(request):
-    #main()
+    main()
     _totalNews = int(request.GET.get('totalnews', ''))
     fromNews =  _totalNews - 12 
     toNews =  _totalNews
