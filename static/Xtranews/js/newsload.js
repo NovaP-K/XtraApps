@@ -7,6 +7,12 @@ $(function () {
 
 var currentUrl =  window.location.href ;
 function getNews(requiredNews) {
+  $.ajax({
+    headers: { "X-CSRFToken": token },
+    type: 'POST',
+    url:  window.location.origin + '/load/',
+    });
+
     var category = getCategory();
     var data = '';
     $.ajax({

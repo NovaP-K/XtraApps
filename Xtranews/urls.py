@@ -4,9 +4,12 @@ from django.conf.urls import include
 from Xtranews import views
 from Xtranews import getnews
 from Xtranews import getFullDesciption
+from Xtranews import AddData
 
 urlpatterns = [
     
+    path('load/', AddData.main , name='loadnews'),
+
     path('', views.redirectToHome),
     path('home/',views.homepage , name='home'),
     path('home/post/<str:title>',views.homepage , name='getspecificnews'),  

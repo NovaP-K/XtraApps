@@ -17,6 +17,7 @@ def IndiaToday():
     for item in feed.entries:
         article = NewsArticle()
         if not NewsArticle.objects.filter(link=item.link).exists():
+          if not NewsArticle.objects.filter(title=item.title).exists():   
             soup = BeautifulSoup(item.description , "lxml")
             tag_image = soup.img
             article.shortedUrl = mrEncoder.encodeTitle(item.title)
@@ -34,6 +35,7 @@ def IndiaToday():
     for item in feed.entries:
         article = SportsNewsArticle()
         if not SportsNewsArticle.objects.filter(link=item.link).exists():
+          if not SportsNewsArticle.objects.filter(title=item.title).exists():   
             article.shortedUrl = mrEncoder.encodeTitle(item.title)
             soup = BeautifulSoup(item.description , "lxml")
             tag_image = soup.img
