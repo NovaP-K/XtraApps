@@ -38,12 +38,12 @@ def TOI():
                 continue
             soup.a.decompose()
             article.description = str(soup.body.text)
-            print("Hello 3 " + str(soup.body.text))
+            #print("Hello 3 " + str(soup.body.text))
             article.pubDate = parser.parse(item.published)
-            print("Hello 4 " + str(item.published))
+            #print("Hello 4 " + str(item.published))
             article.publisher = 'TOI'
             article.link = item.link
-            print("Hello 5 " + str(item.link))
+            #print("Hello 5 " + str(item.link))
             article.save()
 
     #Sports

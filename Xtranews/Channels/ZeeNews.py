@@ -23,7 +23,8 @@ def ZeeNews():
     for item in feed.entries:
         article = NewsArticle()
         if not NewsArticle.objects.filter(link=item.link).exists():
-          if not NewsArticle.objects.filter(shortedUrl = mrEncoder.encodeTitle(item.title)).exists():   
+         if not NewsArticle.objects.filter(shortedUrl = mrEncoder.encodeTitle(item.title)).exists():  
+          if not NewsArticle.objects.filter(title = item.title).exists():   
             r = rs.get(item.link , headers={"User-Agent": "Mozilla/5.0"})
             soup = BeautifulSoup(r.content , "html5lib")
             tag_image = soup.find("meta" , attrs={'property':'og:image'})
@@ -41,7 +42,8 @@ def ZeeNews():
     for item in feed.entries:
         article = SportsNewsArticle()
         if not SportsNewsArticle.objects.filter(link=item.link).exists():
-          if not SportsNewsArticle.objects.filter(shortedUrl = mrEncoder.encodeTitle(item.title)).exists():   
+         if not SportsNewsArticle.objects.filter(shortedUrl = mrEncoder.encodeTitle(item.title)).exists():
+          if not SportsNewsArticle.objects.filter(title = item.title).exists():     
             r = rs.get(item.link , headers={"User-Agent": "Mozilla/5.0"})
             soup = BeautifulSoup(r.content , "html5lib")
             tag_image = soup.find("meta" , attrs={'property':'og:image'})
@@ -59,7 +61,8 @@ def ZeeNews():
     for item in feed.entries:
         article = TechNewsArticle()
         if not TechNewsArticle.objects.filter(link=item.link).exists():
-          if not TechNewsArticle.objects.filter(shortedUrl = mrEncoder.encodeTitle(item.title)).exists():      
+         if not TechNewsArticle.objects.filter(shortedUrl = mrEncoder.encodeTitle(item.title)).exists():   
+          if not TechNewsArticle.objects.filter(title = item.title).exists():     
             r = rs.get(item.link , headers={"User-Agent": "Mozilla/5.0"})
             soup = BeautifulSoup(r.content , "html5lib")
             tag_image = soup.find("meta" , attrs={'property':'og:image'})
@@ -77,7 +80,8 @@ def ZeeNews():
     for item in feed.entries:
         article = HealthNewsArticle()
         if not HealthNewsArticle.objects.filter(link=item.link).exists():
-          if not HealthNewsArticle.objects.filter(shortedUrl = mrEncoder.encodeTitle(item.title)).exists():      
+         if not HealthNewsArticle.objects.filter(shortedUrl = mrEncoder.encodeTitle(item.title)).exists(): 
+          if not HealthNewsArticle.objects.filter(title = item.title).exists():        
             r = rs.get(item.link , headers={"User-Agent": "Mozilla/5.0"})
             soup = BeautifulSoup(r.content , "html5lib")
             tag_image = soup.find("meta" , attrs={'property':'og:image'})
@@ -95,7 +99,8 @@ def ZeeNews():
     for item in feed.entries:
         article = BusinessNewsArticle()
         if not BusinessNewsArticle.objects.filter(link=item.link).exists():
-          if not BusinessNewsArticle.objects.filter(shortedUrl = mrEncoder.encodeTitle(item.title)).exists():      
+         if not BusinessNewsArticle.objects.filter(shortedUrl = mrEncoder.encodeTitle(item.title)).exists():      
+          if not BusinessNewsArticle.objects.filter(title = item.title).exists():  
             r = rs.get(item.link , headers={"User-Agent": "Mozilla/5.0"})
             soup = BeautifulSoup(r.content , "html5lib")
             tag_image = soup.find("meta" , attrs={'property':'og:image'})
@@ -113,7 +118,8 @@ def ZeeNews():
     for item in feed.entries:
         article = EntertainmentNewsArticle()
         if not EntertainmentNewsArticle.objects.filter(link=item.link).exists():
-          if not EntertainmentNewsArticle.objects.filter(shortedUrl = mrEncoder.encodeTitle(item.title)).exists():      
+         if not EntertainmentNewsArticle.objects.filter(shortedUrl = mrEncoder.encodeTitle(item.title)).exists():      
+          if not EntertainmentNewsArticle.objects.filter(title = item.title).exists():      
             r = rs.get(item.link , headers={"User-Agent": "Mozilla/5.0"})
             soup = BeautifulSoup(r.content , "html5lib")
             tag_image = soup.find("meta" , attrs={'property':'og:image'})
